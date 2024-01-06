@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+    --background-color: #e7e7e7;
+    --background-button: #009432;
+    --background-fail: #f00;
+    --base-light-color: #fff;
+    --base-dark-color: #000;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    padding-top: 100px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+header img {
+    height: 36px;
+    margin-right: 6px;
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.container {
+    width: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    max-width: 640px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 56px;
+}
+
+form input {
+    font-size: 24px;
+    background-color: var(--base-light-color);
+    border: none;
+    border-bottom: solid 2px var(--base-dark-color);
+    padding: 8px;
+}
+
+form button {
+    background-color: var(--background-button);
+    color: var(--base-light-color);
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table th {
+    border-bottom: solid 2px var(--base-dark-color);
+    padding: 16px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+table td {
+    padding: 16px 0;
+    text-align: center;
+    font-size: 18px;
+    border-bottom: solid 1px rgba(0, 0, 0, 0.1);
+}
+
+table td img {
+    height: 30px;
+}
+
+.resultado {
+    padding: 8px;
+    font-weight: bold;
+    color: var(--base-light-color);
+    background-color: var(--base-dark-color);
+    border-radius: 3px;
+}
+
+.aprovado {
+    background-color: var(--background-button);
+}
+
+.reprovado {
+    background-color: var(--background-fail);
+}
