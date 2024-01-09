@@ -61,6 +61,6 @@ function calculaMediaFinal() {
 function atualizaMediaFinal() {
   const mediaFinal = calculaMediaFinal();
   
-  document.getElementById('media-final-valor').innerHTML = mediaFinal;
+  document.getElementById('media-final-valor').innerHTML = mediaFinal.toFixed(1).replace('.', ',');
   document.getElementById('media-final-resultado').innerHTML = mediaFinal >= mediaAprovacao ? spanAprovado : spanReprovado; 
 }
